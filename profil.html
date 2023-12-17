@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/dist/output.css" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="hamburger.js"></script>
+    <link rel="stylesheet" href="hamburger.css">
+  </head>
+  <style>
+    #journey {
+      box-shadow: 5px 5px 0px 0px rgba(0, 0, 0, 0.75);
+      -webkit-box-shadow: 5px 5px 0px 0px rgba(0, 0, 0, 0.75);
+      -moz-box-shadow: 5px 5px 0px 0px rgba(0, 0, 0, 0.75);
+    }
+  </style>
+  <body class="bg-[#FDF0F0]">
+    <div class="w-full">
+    <!-- navbar -->
+    <nav class="w-full h-20 flex items-center justify-evenly md:justify-between px-2 md:px-5 lg:pr-0 lg:pl-3 border-t-2 border-b-2 border-black">
+      <div class="flex flex-row justify-center items-center gap-4 px-2">
+        <div class="w-5 lg:w-16 h-5 lg:h-16 rounded-full  flex justify-center items-center">
+          <img src="Asset/campus_junction.png" alt="">
+        </div>
+        <h1 class="text-lg md:text-xl lg:text-4xl font-medium">CampusJunction</h1>
+      </div>
+      <div class="flex justify-center h-full items-center gap-4 flex-wrap">
+          <a href="/index.html" class="h-full">
+          <div class="h-full flex items-center lg:hidden px-2 border-x-2 hover:bg-[#e97777] hover:text-white duration-300 ease-in-out border-black">
+              <img src="/Asset/home.png" class="cursor-pointer h-2/4" alt="" />
+          </div></a>
+        <div id="hamburger" class="lg:hidden cursor-pointer border-black">
+          <div class="icon-bar"></div>
+          <div class="icon-bar"></div>
+          <div class="icon-bar"></div>
+        </div>
+
+        <ul class="lg:flex h-full justify-center items-center hidden text-sm lg:text-2xl">
+          <a href="/index.html" class="h-full"><li class="h-full hover:bg-[#e97777] hover:text-white duration-300 ease-in-out border-l-2 border-black p-3 items-center flex ">Beranda</li></a>
+          <a href="#" class="h-full"><li class="h-full hover:bg-[#e97777] hover:text-white duration-300 ease-in-out border-x-2 border-black p-3 items-center flex">Top 10 Univ</li></a>
+          <a href="/prodi.html" class="h-full"><li class="h-full hover:bg-[#e97777] hover:text-white duration-300 ease-in-out border-black p-3 items-center flex">Program Studi</li></a>
+          <a href="jalurMasuk.html" class="h-full"><li class="h-full hover:bg-[#e97777] hover:text-white duration-300 ease-in-out border-x-2 border-black p-3 items-center flex">Jalur Masuk</li></a>
+          <a href="/biaya.html" class="h-full"><li class="h-full hover:bg-[#e97777] hover:text-white duration-300 ease-in-out border-r-2 border-black p-3 items-center flex">Biaya Pendidikan</li></a>
+          <a href="akomodasi.html" class="h-full"><li class="h-full hover:bg-[#e97777] hover:text-white duration-300 ease-in-out border-black p-3 items-center flex">Akomodasi</li></a>
+        </ul>
+      </div>
+    </nav>
+    <div id="menu" class="lg:hidden hidden ">
+      <h3 class="text-2xl font-bold text-center border-b-2 border-black h-full w-full">MENU</h3>
+      <ul class="flex flex-col h-full justify-center items-start text-xl lg:text-2xl">
+        <a class="w-full h-full" href="#">
+          <li class="h-full gap-3 border-b-2 border-black items-center flex hover:bg-[#e97777] hover:text-white duration-300 ease-in-out">
+            <div class="border-r-2 h-full w-12 flex justify-center py-2  border-black">
+              <img src="/Asset/menuUniv.png" alt="" />
+            </div>
+            <p>Top 10 Univ</p>
+          </li>
+        </a>
+        <a class="w-full" href="/prodi.html">
+          <li class="h-full gap-3 border-b-2 border-black items-center flex hover:bg-[#e97777] hover:text-white duration-300 ease-in-out">
+            <div class="border-r-2 h-full w-12 flex justify-center py-2 border-black">
+              <img src="/Asset/toga.png" alt="" />
+            </div>
+            <p>Program Studi</p>
+          </li></a
+        >
+        <a class="w-full" href="jalurMasuk.html">
+          <li class="h-full gap-3 border-b-2 border-black items-center flex hover:bg-[#e97777] hover:text-white duration-300 ease-in-out">
+            <div class="border-r-2 h-full w-12 flex justify-center py-2 border-black">
+              <img src="/Asset/jalurMasuk.png" alt="" />
+            </div>
+            <p>Jalur Masuk</p>
+          </li></a
+        >
+        <a class="w-full" href="biaya.html">
+          <li class="h-full gap-3 border-b-2 border-black items-center flex hover:bg-[#e97777] hover:text-white duration-300 ease-in-out">
+            <div class="border-r-2 h-full w-12 flex justify-center py-2 border-black">
+              <img src="/Asset/biaya.png" alt="" />
+            </div>
+            <p>Biaya Pendidikan</p>
+          </li></a
+        >
+        <a class="w-full" href="akomodasi.html">
+          <li class="h-full gap-3 border-b-2 border-black items-center flex hover:bg-[#e97777] hover:text-white duration-300 ease-in-out">
+            <div class="border-r-2 h-full w-12 flex justify-center py-2 border-black">
+              <img src="/Asset/akomodasi.png" alt="" />
+            </div>
+            <p>Akomodasi</p>
+          </li></a
+        >
+      </ul>
+    </div>
+    <!-- navbar end -->
+
+      <!-- hero -->
+      <div class=" w-full bg-[#E2EBCB]   flex flex-row   lg:gap-12 gap-4  justify-center  items-center border-b-4 border-black">
+        <img draggable="false" src="/Asset/HeroImage/profilDetail.png" class="h-full w-full  aspect-auto" alt="">
+    </div>
+  </div>
+
+    
+
+  <!-- content -->
+  <div id="journey" class="bg-white mx-auto text-center w-[90%] mt-10 lg:mt-20 mb-10 lg:mb-20 pb-16 lg:pb-32 border-2 border-black">
+    <div class="flex w-full bg-[#E2EBCB] gap-2 py-3 px-5 mb-7 md:mb-20">
+      <div draggable="false" class="w-5 h-5 bg-red-500 rounded-full"></div>
+      <div draggable="false" class="w-5 h-5 bg-green-500 rounded-full"></div>
+      <div draggable="false" class="w-5 h-5 bg-blue-500 rounded-full"></div>
+    </div>
+    <h2 class="bg-gradient-to-r mb-7 md:mb-20 from-[#132043] to-[#96CBF9] bg-clip-text text-transparent text-base sm:text-lg md:text-3xl font-bold lg:text-5xl w-1/5 mx-auto">PROFIL SINGKAT</h2>
+    <div class="flex justify-center gap-5 mb-10 w-full h-20 md:h-52 lg:h-96 ">
+      <img draggable="false" src="Asset/Profil/image1.png" class="w-auto h-[100] object-cover aspect-video " alt="">
+      <img draggable="false" src="Asset/Profil/image2.png" class="w-auto h-[100%] object-cover aspect-square"  alt="">
+    </div>
+    <p class="text-sm md:text-xl text-left px-5">
+      Universitas Brawijaya (UB) didirikan oleh Presiden Republik Indonesia melalui kawat no. 258/K/61 dikirim pada tanggal 11 Juli 1961. Nama Brawijaya ini diambil dari gelar Raja-Raja Majapahit, sebuah kerajaan besar di Indonesia dari abad ke-12 hingga ke-15. Kemudian, UB berubah status menjadi universitas negeri pada tanggal 5 Januari 1963, menyusul Keputusan Presiden yang dikeluarkan pada awal tahun yang sama. Saat ini UB merupakan salah satu universitas terkemuka di Indonesia dengan lebih dari 60.000 mahasiswa, dalam berbagai program vokasi, sarjana, magister, doktor, profesi, dan dokter spesialis.
+<br>
+<br>
+UB memiliki berbagai fasilitas penunjang kegiatan akademik di kampus, seperti perpustakaan, laboratorium seperti LSIH dan LSSR, Lembaga Penelitian dan Pengabdian kepada Masyarakat (LPPM), Lembaga Pengembangan Pendidikan (LP2), Lembaga Penjaminan Mutu (LPM), International Office, Institut Biosains, UB Press, UB Media dan Komunikasi, Lab Terpadu, UB Forest, Agrotechnopark, Pusat Studi dan Layanan Disabilitas.
+Universitas Brawijaya (UB) didirikan oleh Presiden Republik Indonesia melalui kawat no. 258/K/61 dikirim pada tanggal 11 Juli 1961. Nama Brawijaya ini diambil dari gelar Raja-Raja Majapahit, sebuah kerajaan besar di Indonesia dari abad ke-12 hingga ke-15. Kemudian, UB berubah status menjadi universitas negeri pada tanggal 5 Januari 1963, menyusul Keputusan Presiden yang dikeluarkan pada awal tahun yang sama. Saat ini UB merupakan salah satu universitas terkemuka di Indonesia dengan lebih dari 60.000 mahasiswa, dalam berbagai program vokasi, sarjana, magister, doktor, profesi, dan dokter spesialis.
+<br>
+<br>
+
+Terdapat juga berbagai kelompok kegiatan mahasiswa dan fasilitas Unit Kegiatan Mahasiswa, Pertamina Sport Arena, Sport Clubhouse, Samantha Krida Hall, Widyaloka Hall, Lapangan Sepakbola dan fasilitas lainnya di Kampus Dieng.
+Universitas Brawijaya (UB) didirikan oleh Presiden Republik Indonesia melalui kawat no. 258/K/61 dikirim pada tanggal 11 Juli 1961. Nama Brawijaya ini diambil dari gelar Raja-Raja Majapahit, sebuah kerajaan besar di Indonesia dari abad ke-12 hingga ke-15. Kemudian, UB berubah status menjadi universitas negeri pada tanggal 5 Januari 1963, menyusul Keputusan Presiden yang dikeluarkan pada awal tahun yang sama. Saat ini UB merupakan salah satu universitas terkemuka di Indonesia dengan lebih dari 60.000 mahasiswa, dalam berbagai program vokasi, sarjana, magister, doktor, profesi, dan dokter spesialis.
+<br>
+<br>
+
+UB juga menyediakan fasilitas penunjang seperti Armada Bus, Asrama Mahasiswa, Koperasi Karyawan (KPRI), Asrama Mahasiswa Internasional, Bank dan ATM Center, Kantor Pos, Masjid Raden Patah, Fasilitas Pembuatan Kompos, serta ketersediaan Kantin Halal. Sedangkan untuk para alumni, universitas menyediakan Ikatan Alumni, Unit Pengembangan Karir dan Kewirausahaan, Inkubator Bisnis.
+<br>
+<br>
+
+Di era modern ini, UB juga menyediakan fasilitas IT dan Komputer, seperti Sistem Informasi Akademik, Sistem Informasi Pendaftaran dan Seleksi Mahasiswa, Sistem Informasi Penerimaan Mahasiswa Baru Online, Portal Informasi Pelayanan Terpadu (GAPURA), Sistem Informasi Akademik Mahasiswa, Sistem Pendukung Keputusan, dengan bandwidth internet yang memadai. UB juga menyediakan fasilitas keselamatan dan kesehatan, seperti Pemadam Kebakaran dan Penyelamatan, Ambulan, Klinik Kesehatan, Rumah Sakit UB, dan e-konseling.
+
+<br>
+<br>
+UB telah memiliki Akreditasi Nasional Grade A yang dikeluarkan oleh Badan Akreditasi Nasional Perguruan Tinggi, dan LAMPTKES. Selain itu UB juga telah terakreditasi secara internasional oleh berbagai badan akreditasi, seperti Perpustakaan UB yang terakreditasi Peringkat A oleh IATUL, Program Studi Akuntansi Fakultas Ekonomi dan Bisnis yang diakreditasi oleh ACCA, Akreditasi oleh IFT untuk Program Studi Teknologi Hasil Pertanian di Fakultas Teknologi Pertanian, Akreditasi Badan Akreditasi Indonesia untuk Pendidikan Keinsinyuran (IABEE) untuk Program Studi Teknik, akreditasi dari Alliance on Business Education and Scholarship for Tomorrow, dan juga anggota asosiasi untuk Penjaminan Mutu Jaringan Universitas ASEAN (AUN-QA), dengan banyak Program Studi Tersertifikasi dan Terakreditasi AUN-QA.
+
+
+    </p>
+    
+       
+      
+    
+  </div>
+<!-- content end -->
+
+    
+    <!-- footer -->
+    <footer class="w-full bg-[#F1B4BB] mt-28 px-6 md:px-24 pb-4 pt-6 md:pt-24">
+      <div class="flex items-center gap-4 md:gap-7 mb-7">
+        <div class="h-7 md:h-20 w-7 md:w-20  rounded-full">
+          <img src="Asset/campus_junction.png" alt="">
+        </div>
+        <h1 class="text-xl md:text-2xl lg:text-4xl">CampusJunction</h1>
+      </div>
+      <p class="text-base md:text-lg mb-14">Akses Informasi Perguruan Tinggi</p>
+      <div class="flex md:flex-row flex-col gap-4 lg:text-xl flex-wrap justify-start lg:justify-between">
+        <div class="flex flex-col">
+          <h3 class="font-bold mb-4 ">CampusJunction</h3>
+          <a href="#"><p class="text-lg mb-1 hover:text-slate-100 duration-300 ease-in-out">Top 10 Univ</p></a>
+          <a href="prodi.html"><p class="text-lg mb-1 hover:text-slate-100 duration-300 ease-in-out">Program Studi</p></a>
+          <a href="jalurMasuk.html"><p class="text-lg mb-1 hover:text-slate-100 duration-300 ease-in-out">Jalur Masuk</p></a>
+          <a href="biaya.html"><p class="text-lg mb-1 hover:text-slate-100 duration-300 ease-in-out">Biaya Pendidikan</p></a>
+          <a href="akomodasi.html"><p class="text-lg mb-1 hover:text-slate-100 duration-300 ease-in-out">Akomodasi</p></a>
+        </div>
+        <div class="flex flex-col">
+          <h3 class="font-bold mb-4">Hubungi Kami</h3>
+          <p class="text-lg mb-1">Layanan Masukan</p>
+          <p class="text-lg mb-1">0821-2295-0235 (Whatsapp)</p>
+          <p class="text-lg mb-1">hello@campusjunction.com</p>
+        </div>
+        <div class="flex flex-col">
+          <h3 class="font-bold mb-4">Social Media</h3>
+          <p class="text-lg mb-1">Instagram</p>
+          <p class="text-lg mb-1">Facebook</p>
+          <p class="text-lg mb-1">Youtube</p>
+          <p class="text-lg mb-1">Twitter</p>
+          <p class="text-lg mb-1">Tiktok</p>
+        </div>
+        <div class="flex flex-col">
+          <h3 class="font-bold mb-4">Lainnya</h3>
+          <p class="text-lg mb-1">FAQ</p>
+          <p class="text-lg mb-1">Terms & Conditions</p>
+          <p class="text-lg mb-1">Privacy & Policy</p>
+        </div>
+      </div>
+      <p class="text-center">© 2023 CampusJunction - by Keilapumari team</p>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/dist/output.css" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="hamburger.js"></script>
+    <link rel="stylesheet" href="hamburger.css">
+  </head>
+  <style>
+    #card {
+      box-shadow: 5px 5px 0px 0px rgba(0, 0, 0, 0.75);
+      -webkit-box-shadow: 5px 5px 0px 0px rgba(0, 0, 0, 0.75);
+      -moz-box-shadow: 5px 5px 0px 0px rgba(0, 0, 0, 0.75);
+    }
+  </style>
+  <body class="bg-[#FDF0F0]">
+    <div class="w-full">
+      <!-- navbar -->
+    <nav class="w-full h-20 flex items-center justify-evenly md:justify-between px-2 md:px-5 lg:pr-0 lg:pl-3 border-t-2 border-b-2 border-black">
+        <div class="flex flex-row justify-center items-center gap-4 px-2">
+          <div class="w-5 lg:w-16 h-5 lg:h-16 rounded-full  flex justify-center items-center">
+            <img src="Asset/campus_junction.png" alt="">
+          </div>
+          <h1 class="text-lg md:text-xl lg:text-4xl font-medium">CampusJunction</h1>
+        </div>
+        <div class="flex justify-center h-full items-center gap-4 flex-wrap">
+            <a href="/index.html" class="h-full">
+            <div class="h-full flex items-center lg:hidden px-2 border-x-2 hover:bg-[#e97777] hover:text-white duration-300 ease-in-out border-black">
+                <img src="/Asset/home.png" class="cursor-pointer h-2/4" alt="" />
+            </div></a>
+          <div id="hamburger" class="lg:hidden cursor-pointer border-black">
+            <div class="icon-bar"></div>
+            <div class="icon-bar"></div>
+            <div class="icon-bar"></div>
+          </div>
+  
+          <ul class="lg:flex h-full justify-center items-center hidden text-sm lg:text-2xl">
+            <a href="/index.html" class="h-full"><li class="h-full hover:bg-[#e97777] hover:text-white duration-300 ease-in-out border-l-2 border-black p-3 items-center flex ">Beranda</li></a>
+            <a href="#" class="h-full"><li class="h-full hover:bg-[#e97777] hover:text-white duration-300 ease-in-out border-x-2 border-black p-3 items-center flex">Top 10 Univ</li></a>
+            <a href="/prodi.html" class="h-full"><li class="h-full hover:bg-[#e97777] hover:text-white duration-300 ease-in-out border-black p-3 items-center flex">Program Studi</li></a>
+            <a href="jalurMasuk.html" class="h-full"><li class="h-full hover:bg-[#e97777] hover:text-white duration-300 ease-in-out border-x-2 border-black p-3 items-center flex">Jalur Masuk</li></a>
+            <a href="/biaya.html" class="h-full"><li class="h-full hover:bg-[#e97777] hover:text-white duration-300 ease-in-out border-r-2 border-black p-3 items-center flex">Biaya Pendidikan</li></a>
+            <a href="akomodasi.html" class="h-full"><li class="h-full hover:bg-[#e97777] hover:text-white duration-300 ease-in-out border-black p-3 items-center flex">Akomodasi</li></a>
+          </ul>
+        </div>
+      </nav>
+      <div id="menu" class="lg:hidden hidden ">
+        <h3 class="text-2xl font-bold text-center border-b-2 border-black h-full w-full">MENU</h3>
+        <ul class="flex flex-col h-full justify-center items-start text-xl lg:text-2xl">
+          <a class="w-full h-full" href="#">
+            <li class="h-full gap-3 border-b-2 border-black items-center flex hover:bg-[#e97777] hover:text-white duration-300 ease-in-out">
+              <div class="border-r-2 h-full w-12 flex justify-center py-2  border-black">
+                <img src="/Asset/menuUniv.png" alt="" />
+              </div>
+              <p>Top 10 Univ</p>
+            </li>
+          </a>
+          <a class="w-full" href="/prodi.html">
+            <li class="h-full gap-3 border-b-2 border-black items-center flex hover:bg-[#e97777] hover:text-white duration-300 ease-in-out">
+              <div class="border-r-2 h-full w-12 flex justify-center py-2 border-black">
+                <img src="/Asset/toga.png" alt="" />
+              </div>
+              <p>Program Studi</p>
+            </li></a
+          >
+          <a class="w-full" href="jalurMasuk.html">
+            <li class="h-full gap-3 border-b-2 border-black items-center flex hover:bg-[#e97777] hover:text-white duration-300 ease-in-out">
+              <div class="border-r-2 h-full w-12 flex justify-center py-2 border-black">
+                <img src="/Asset/jalurMasuk.png" alt="" />
+              </div>
+              <p>Jalur Masuk</p>
+            </li></a
+          >
+          <a class="w-full" href="biaya.html">
+            <li class="h-full gap-3 border-b-2 border-black items-center flex hover:bg-[#e97777] hover:text-white duration-300 ease-in-out">
+              <div class="border-r-2 h-full w-12 flex justify-center py-2 border-black">
+                <img src="/Asset/biaya.png" alt="" />
+              </div>
+              <p>Biaya Pendidikan</p>
+            </li></a
+          >
+          <a class="w-full" href="akomodasi.html">
+            <li class="h-full gap-3 border-b-2 border-black items-center flex hover:bg-[#e97777] hover:text-white duration-300 ease-in-out">
+              <div class="border-r-2 h-full w-12 flex justify-center py-2 border-black">
+                <img src="/Asset/akomodasi.png" alt="" />
+              </div>
+              <p>Akomodasi</p>
+            </li></a
+          >
+        </ul>
+      </div>
+      <!-- navbar end -->
+
+
+      <!-- hero -->
+      <div class=" w-full bg-[#E2EBCB]   flex flex-row   lg:gap-12 gap-4  justify-center  items-center border-b-4 border-black">
+          <img draggable="false" src="/Asset/HeroImage/jalurMasukDetail.png" class="h-full w-full  aspect-auto" alt="">
+      </div>
+    </div>
+
+   <!-- content -->
+    <div class="grid md:grid-cols-2 gap-5 px-10 mt-10 md:mt-20">
+        <div id="card" class="bg-white px-5 py-10  ">
+            <h2 class="text-lg md:text-xl lg:text-4xl font-bold mb-11 md:mb-5 h-10 md:h-20 ">Jalur Masuk SNBP</h2>
+            <div class="h-px w-full bg-slate-500"></div>
+            <p class="text-lg overflow-auto  h-[15rem] ">Memiliki prestasi akademik dan memenuhi persyaratan yang ditentukan oleh masing-masing PTN Memiliki NISN dan terdaftar di PDSSMemiliki nilai rapor semester 1 s.d. 5 yang telah diisikan di PDSSPeserta yang memilih program studi bidang seni dan olahraga wajib mengunggah Portofolio.</p>
+        </div>
+        <div id="card" class="bg-white px-5 py-10  ">
+            <h2 class="text-lg md:text-xl lg:text-4xl font-bold mb-11 md:mb-5 h-10 md:h-20 ">Jalur Masuk SNBT</h2>
+            <div class="h-px w-full bg-slate-500"></div>
+            <p class="text-lg overflow-auto  h-[15rem] ">SNBT adalah salah satu jalur untuk masuk pada perguruan tinggi negeri (PTN) Akademik, PTN Vokasi, dan Perguruan Tinggi Keagamaan Agama Islam Negeri (PTKIN). Dalam tesnya, SNBT akan mengukur potensi kognitif, penalaran matematika, literasi dalam bahasa Indonesia, hingga literasi dalam bahasa inggris.</p>
+        </div>
+        <div id="card" class="bg-white px-5 py-10  ">
+            <h2 class="text-lg md:text-xl lg:text-4xl font-bold mb-11 md:mb-5 h-10 md:h-20 ">Jalur Mandiri SPMK</h2>
+            <div class="h-px w-full bg-slate-500"></div>
+            <p class="text-lg overflow-auto  h-[15rem] ">Seleksi Mandiri UB merupakan seleksi masuk Universitas Brawijaya yang diselenggarakan secara mandiri oleh Universitas Brawijaya. Terdapat jalur mandiri prestasi rapor, umum rapor, dan skor SNBT.</p>
+        </div>
+        <div id="card" class="bg-white px-5 py-10  ">
+            <h2 class="text-lg md:text-xl lg:text-4xl font-bold mb-11 md:mb-5 h-10 md:h-20 ">Penerimaan Mahasiswa Vokasi</h2>
+            <div class="h-px w-full bg-slate-500"></div>
+            <p class="text-lg overflow-auto  h-[15rem] ">Program VOKASI merupakan seleksi masuk yang diselenggarakan secara mandiri oleh Universitas Brawijaya. Seleksi dilaksanakan berdasarkan nilai rapor serta prestasi akademik dan non akademik sesuai ketentuan. Dengan khusus D3/D4.</p>
+        </div>
+        <div id="card" class="bg-white px-5 py-10  ">
+            <h2 class="text-lg md:text-xl lg:text-4xl font-bold mb-11 md:mb-5 h-10 md:h-20 ">Seleksi Alih Program</h2>
+            <div class="h-px w-full bg-slate-500"></div>
+            <p class="text-lg overflow-auto  h-[15rem] ">Seleksi Alih Program (SAP) adalah jenis seleksi masuk Universitas Brawijaya untuk calon pendaftar yang sudah menempuh jenjang pendidikan Diploma dan akan melanjutkan ke program Sarjana yang sesuai dengan bidang ilmunya.</p>
+        </div>
+        <div id="card" class="bg-white px-5 py-10  ">
+            <h2 class="text-lg md:text-xl lg:text-4xl font-bold mb-11 md:mb-5 h-10 md:h-20 ">Seleksi Program Khusus Penyandang Disabilitas (SPKPD)</h2>
+            <div class="h-px w-full bg-slate-500"></div>
+            <p class="text-lg overflow-auto  h-[15rem] ">Seleksi Program Khusus Penyandang Disabilitas (SPKPD) adalah seleksi penerimaan mahasiswa baru Universitas Brawijaya (UB) yang diperuntukkan bagi penyandang disabilitas.</p>
+        </div>
+        <div id="card" class="bg-white px-5 py-10  ">
+            <h2 class="text-lg md:text-xl lg:text-4xl font-bold mb-11 md:mb-5 h-10 md:h-20 ">Jalur International Student Admission</h2>
+            <div class="h-px w-full bg-slate-500"></div>
+            <p class="text-lg overflow-auto h-[15rem] ">Penerimaan Mahasiswa Internasional adalah proses bagi warga negara non-Indonesia untuk diterima di program studi reguler (pengajaran dalam bahasa Indonesia) atau internasional (pengajaran dalam bahasa Inggris) di Universitas Brawijaya (UB).
+                Penerimaan mahasiswa internasional ke program studi di UB bergantung pada ketersediaan program, kelayakan penerimaan, dan persetujuan Kartu Mahasiswa (STP) berdasarkan peraturan Imigrasi.</p>
+        </div>
+
+       
+
+    </div>
+    <!-- content end -->
+
+  
+
+    
+    
+
+   <!-- footer -->
+   <footer class="w-full bg-[#F1B4BB] mt-28 px-6 md:px-24 pb-4 pt-6 md:pt-24">
+    <div class="flex items-center gap-4 md:gap-7 mb-7">
+      <div class="h-7 md:h-20 w-7 md:w-20  rounded-full">
+        <img src="Asset/campus_junction.png" alt="">
+      </div>
+      <h1 class="text-xl md:text-2xl lg:text-4xl">CampusJunction</h1>
+    </div>
+    <p class="text-base md:text-lg mb-14">Akses Informasi Perguruan Tinggi</p>
+    <div class="flex md:flex-row flex-col gap-4 lg:text-xl flex-wrap justify-start lg:justify-between">
+      <div class="flex flex-col">
+        <h3 class="font-bold mb-4 ">CampusJunction</h3>
+        <a href="#"><p class="text-lg mb-1 hover:text-slate-100 duration-300 ease-in-out">Top 10 Univ</p></a>
+        <a href="prodi.html"><p class="text-lg mb-1 hover:text-slate-100 duration-300 ease-in-out">Program Studi</p></a>
+        <a href="jalurMasuk.html"><p class="text-lg mb-1 hover:text-slate-100 duration-300 ease-in-out">Jalur Masuk</p></a>
+        <a href="biaya.html"><p class="text-lg mb-1 hover:text-slate-100 duration-300 ease-in-out">Biaya Pendidikan</p></a>
+        <a href="akomodasi.html"><p class="text-lg mb-1 hover:text-slate-100 duration-300 ease-in-out">Akomodasi</p></a>
+      </div>
+      <div class="flex flex-col">
+        <h3 class="font-bold mb-4">Hubungi Kami</h3>
+        <p class="text-lg mb-1">Layanan Masukan</p>
+        <p class="text-lg mb-1">0821-2295-0235 (Whatsapp)</p>
+        <p class="text-lg mb-1">hello@campusjunction.com</p>
+      </div>
+      <div class="flex flex-col">
+        <h3 class="font-bold mb-4">Social Media</h3>
+        <p class="text-lg mb-1">Instagram</p>
+        <p class="text-lg mb-1">Facebook</p>
+        <p class="text-lg mb-1">Youtube</p>
+        <p class="text-lg mb-1">Twitter</p>
+        <p class="text-lg mb-1">Tiktok</p>
+      </div>
+      <div class="flex flex-col">
+        <h3 class="font-bold mb-4">Lainnya</h3>
+        <p class="text-lg mb-1">FAQ</p>
+        <p class="text-lg mb-1">Terms & Conditions</p>
+        <p class="text-lg mb-1">Privacy & Policy</p>
+      </div>
+    </div>
+    <p class="text-center">© 2023 CampusJunction - by Keilapumari team</p>
+  </footer>
+  </body>
+</html>

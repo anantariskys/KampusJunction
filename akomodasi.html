@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/dist/output.css" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="hamburger.js"></script>
+    <link rel="stylesheet" href="hamburger.css">
+  </head>
+  <style>
+    #card {
+      box-shadow: 5px 5px 0px 0px rgba(0, 0, 0, 0.75);
+      -webkit-box-shadow: 5px 5px 0px 0px rgba(0, 0, 0, 0.75);
+      -moz-box-shadow: 5px 5px 0px 0px rgba(0, 0, 0, 0.75);
+    }
+  </style>
+  <body class="bg-[#FDF0F0]">
+    <div class="w-full">
+     <!-- navbar -->
+    <nav class="w-full h-20 flex items-center justify-evenly md:justify-between px-2 md:px-5 lg:pr-0 lg:pl-3 border-t-2 border-b-2 border-black">
+      <div class="flex flex-row justify-center items-center gap-4 px-2">
+        <div class="w-5 lg:w-16 h-5 lg:h-16 rounded-full  flex justify-center items-center">
+          <img src="Asset/campus_junction.png" alt="">
+        </div>
+        <h1 class="text-lg md:text-xl lg:text-4xl font-medium">CampusJunction</h1>
+      </div>
+      <div class="flex justify-center h-full items-center gap-4 flex-wrap">
+          <a href="/index.html" class="h-full">
+          <div class="h-full flex items-center lg:hidden px-2 border-x-2 hover:bg-[#e97777] hover:text-white duration-300 ease-in-out border-black">
+              <img src="/Asset/home.png" class="cursor-pointer h-2/4" alt="" />
+          </div></a>
+        <div id="hamburger" class="lg:hidden cursor-pointer border-black">
+          <div class="icon-bar"></div>
+          <div class="icon-bar"></div>
+          <div class="icon-bar"></div>
+        </div>
+
+        <ul class="lg:flex h-full justify-center items-center hidden text-sm lg:text-2xl">
+          <a href="/index.html" class="h-full"><li class="h-full hover:bg-[#e97777] hover:text-white duration-300 ease-in-out border-l-2 border-black p-3 items-center flex ">Beranda</li></a>
+          <a href="#" class="h-full"><li class="h-full hover:bg-[#e97777] hover:text-white duration-300 ease-in-out border-x-2 border-black p-3 items-center flex">Top 10 Univ</li></a>
+          <a href="/prodi.html" class="h-full"><li class="h-full hover:bg-[#e97777] hover:text-white duration-300 ease-in-out border-black p-3 items-center flex">Program Studi</li></a>
+          <a href="jalurMasuk.html" class="h-full"><li class="h-full hover:bg-[#e97777] hover:text-white duration-300 ease-in-out border-x-2 border-black p-3 items-center flex">Jalur Masuk</li></a>
+          <a href="/biaya.html" class="h-full"><li class="h-full hover:bg-[#e97777] hover:text-white duration-300 ease-in-out border-r-2 border-black p-3 items-center flex">Biaya Pendidikan</li></a>
+          <a href="akomodasi.html" class="h-full"><li class="h-full hover:bg-[#e97777] hover:text-white duration-300 ease-in-out border-black p-3 items-center flex">Akomodasi</li></a>
+        </ul>
+      </div>
+    </nav>
+    <div id="menu" class="lg:hidden hidden ">
+      <h3 class="text-2xl font-bold text-center border-b-2 border-black h-full w-full">MENU</h3>
+      <ul class="flex flex-col h-full justify-center items-start text-xl lg:text-2xl">
+        <a class="w-full h-full" href="#">
+          <li class="h-full gap-3 border-b-2 border-black items-center flex hover:bg-[#e97777] hover:text-white duration-300 ease-in-out">
+            <div class="border-r-2 h-full w-12 flex justify-center py-2  border-black">
+              <img src="/Asset/menuUniv.png" alt="" />
+            </div>
+            <p>Top 10 Univ</p>
+          </li>
+        </a>
+        <a class="w-full" href="/prodi.html">
+          <li class="h-full gap-3 border-b-2 border-black items-center flex hover:bg-[#e97777] hover:text-white duration-300 ease-in-out">
+            <div class="border-r-2 h-full w-12 flex justify-center py-2 border-black">
+              <img src="/Asset/toga.png" alt="" />
+            </div>
+            <p>Program Studi</p>
+          </li></a
+        >
+        <a class="w-full" href="jalurMasuk.html">
+          <li class="h-full gap-3 border-b-2 border-black items-center flex hover:bg-[#e97777] hover:text-white duration-300 ease-in-out">
+            <div class="border-r-2 h-full w-12 flex justify-center py-2 border-black">
+              <img src="/Asset/jalurMasuk.png" alt="" />
+            </div>
+            <p>Jalur Masuk</p>
+          </li></a
+        >
+        <a class="w-full" href="biaya.html">
+          <li class="h-full gap-3 border-b-2 border-black items-center flex hover:bg-[#e97777] hover:text-white duration-300 ease-in-out">
+            <div class="border-r-2 h-full w-12 flex justify-center py-2 border-black">
+              <img src="/Asset/biaya.png" alt="" />
+            </div>
+            <p>Biaya Pendidikan</p>
+          </li></a
+        >
+        <a class="w-full" href="akomodasi.html">
+          <li class="h-full gap-3 border-b-2 border-black items-center flex hover:bg-[#e97777] hover:text-white duration-300 ease-in-out">
+            <div class="border-r-2 h-full w-12 flex justify-center py-2 border-black">
+              <img src="/Asset/akomodasi.png" alt="" />
+            </div>
+            <p>Akomodasi</p>
+          </li></a
+        >
+      </ul>
+    </div>
+    <!-- navbar end -->
+
+      <!-- hero -->
+      <div class=" w-full bg-[#E2EBCB]   flex flex-row   lg:gap-12 gap-4  justify-center  items-center border-b-4 border-black">
+          <img draggable="false" src="/Asset/HeroImage/akomodasi.png" class="h-full w-full  aspect-auto" alt="">
+      </div>
+    </div>
+
+  
+
+    <!-- card section -->
+    <div class="flex flex-wrap justify-center gap-5 w-4/5 mx-auto lg:mt-32 md:mt-16 mt-8">
+      <!-- card1 -->
+      <div id="card" class="bg-[#FFE483] hover:grayscale duration-500 ease-in-out  lg:w-80 w-60 flex flex-col px-5 pb-7 lg:pb-16 mb-3 border-[1px] border-black">
+        <a href="">
+          <div class="flex justify-between">
+            <div class="flex gap-2 py-2">
+              <div draggable="false" class="w-5 h-5 bg-red-500 rounded-full"></div>
+              <div draggable="false" class="w-5 h-5 bg-green-500 rounded-full"></div>
+              <div draggable="false" class="w-5 h-5 bg-blue-500 rounded-full"></div>
+            </div>
+            <h1 class="lg:text-5xl text-3xl mt-1 mr-1 font-medium">#1</h1>
+          </div>
+          <div class="lg:text-xl text-lg flex flex-col mt-5 lg:mt-10 justify-start">
+            <h1 class="font-bold mb-2">Universitas Indonesia</h1>
+            <h2>Depok, Jawa Barat</h2>
+          </div>
+        </a>
+      </div>
+
+      <div id="card" class="bg-[#E2EBCB] hover:grayscale duration-500 ease-in-out  lg:w-80 w-60 flex flex-col px-5 pb-7 lg:pb-16 mb-3 border-[1px] border-black">
+        <a href="">
+        <div class="flex justify-between">
+          <div class="flex gap-2 py-2">
+            <div draggable="false" class="w-5 h-5 bg-red-500 rounded-full"></div>
+            <div draggable="false" class="w-5 h-5 bg-green-500 rounded-full"></div>
+            <div draggable="false" class="w-5 h-5 bg-blue-500 rounded-full"></div>
+          </div>
+          <h1 class="lg:text-5xl text-3xl mt-1 mr-1 font-medium">#2</h1>
+        </div>
+        <div class="lg:text-xl text-lg flex flex-col mt-5 lg:mt-10 justify-start">
+          <h1 class="font-bold mb-2">Universitas Gadjah Mada</h1>
+          <h2>Jogjakarta, Jawa Tengah</h2>
+        </div>
+      </a>
+      </div>
+      <div id="card" class="bg-[#96CBF9] hover:grayscale duration-500 ease-in-out  lg:w-80 w-60 flex flex-col px-5 pb-7 lg:pb-16 mb-3 border-[1px] border-black">
+        <a href="/akomodasiDetail.html">
+        <div class="flex justify-between">
+          <div class="flex gap-2 py-2">
+            <div draggable="false" class="w-5 h-5 bg-red-500 rounded-full"></div>
+            <div draggable="false" class="w-5 h-5 bg-green-500 rounded-full"></div>
+            <div draggable="false" class="w-5 h-5 bg-blue-500 rounded-full"></div>
+          </div>
+          <h1 class="lg:text-5xl text-3xl mt-1 mr-1 font-medium">#3</h1>
+        </div>
+        <div class="lg:text-xl text-lg flex flex-col mt-5 lg:mt-10 justify-start">
+          <h1 class="font-bold mb-2">Universitas Brawijaya</h1>
+          <h2>Malang, Jawa Timur</h2>
+        </div>
+      </a>
+      </div>
+      <div id="card" class="bg-[#FFC5C5] hover:grayscale duration-500 ease-in-out  lg:w-80 w-60 flex flex-col px-5 pb-7 lg:pb-16 mb-3 border-[1px] border-black">
+        <div class="flex justify-between">
+          <div class="flex gap-2 py-2">
+            <div draggable="false" class="w-5 h-5 bg-red-500 rounded-full"></div>
+            <div draggable="false" class="w-5 h-5 bg-green-500 rounded-full"></div>
+            <div draggable="false" class="w-5 h-5 bg-blue-500 rounded-full"></div>
+          </div>
+          <h1 class="lg:text-5xl text-3xl mt-1 mr-1 font-medium">#4</h1>
+        </div>
+        <div class="lg:text-xl text-lg flex flex-col mt-5 lg:mt-10 justify-start">
+          <h1 class="font-bold mb-2">Institur Teknologi Bandung</h1>
+          <h2>Bandung, Jawa Barat</h2>
+        </div>
+      </div>
+      <div id="card" class="bg-[#C7CEE2] hover:grayscale duration-500 ease-in-out  lg:w-80 w-60 flex flex-col px-5 pb-7 lg:pb-16 mb-3 border-[1px] border-black">
+        <div class="flex justify-between">
+          <div class="flex gap-2 py-2">
+            <div draggable="false" class="w-5 h-5 bg-red-500 rounded-full"></div>
+            <div draggable="false" class="w-5 h-5 bg-green-500 rounded-full"></div>
+            <div draggable="false" class="w-5 h-5 bg-blue-500 rounded-full"></div>
+          </div>
+          <h1 class="lg:text-5xl text-3xl mt-1 mr-1 font-medium">#5</h1>
+        </div>
+        <div class="lg:text-xl text-lg flex flex-col mt-5 lg:mt-10 justify-start">
+          <h1 class="font-bold mb-2">Universitas Airlangga</h1>
+          <h2>Depok, Jawa Barat</h2>
+        </div>
+      </div>
+      <div id="card" class="bg-[#D9D9D9] hover:grayscale duration-500 ease-in-out  lg:w-80 w-60 flex flex-col px-5 pb-7 lg:pb-16 mb-3 border-[1px] border-black">
+        <div class="flex justify-between">
+          <div class="flex gap-2 py-2">
+            <div draggable="false" class="w-5 h-5 bg-red-500 rounded-full"></div>
+            <div draggable="false" class="w-5 h-5 bg-green-500 rounded-full"></div>
+            <div draggable="false" class="w-5 h-5 bg-blue-500 rounded-full"></div>
+          </div>
+          <h1 class="lg:text-5xl text-3xl mt-1 mr-1 font-medium">#6</h1>
+        </div>
+        <div class="lg:text-xl text-lg flex flex-col mt-5 lg:mt-10 justify-start">
+          <h1 class="font-bold mb-2">Universitas Bina Nusantara</h1>
+          <h2>Depok, Jawa Barat</h2>
+        </div>
+      </div>
+      <div id="card" class="bg-[#FF90E5] hover:grayscale duration-500 ease-in-out  lg:w-80 w-60 flex flex-col px-5 pb-7 lg:pb-16 mb-3 border-[1px] border-black">
+        <div class="flex justify-between">
+          <div class="flex gap-2 py-2">
+            <div draggable="false" class="w-5 h-5 bg-red-500 rounded-full"></div>
+            <div draggable="false" class="w-5 h-5 bg-green-500 rounded-full"></div>
+            <div draggable="false" class="w-5 h-5 bg-blue-500 rounded-full"></div>
+          </div>
+          <h1 class="lg:text-5xl text-3xl mt-1 mr-1 font-medium">#7</h1>
+        </div>
+        <div class="lg:text-xl text-lg flex flex-col mt-5 lg:mt-10 justify-start">
+          <h1 class="font-bold mb-2">Universitas Padjadjaran</h1>
+          <h2>Bandung, Jawa Barat</h2>
+        </div>
+      </div>
+      <div id="card" class="bg-[#82D394] hover:grayscale duration-500 ease-in-out  lg:w-80 w-60 flex flex-col px-5 pb-7 lg:pb-16 mb-3 border-[1px] border-black">
+        <div class="flex justify-between">
+          <div class="flex gap-2 py-2">
+            <div draggable="false" class="w-5 h-5 bg-red-500 rounded-full"></div>
+            <div draggable="false" class="w-5 h-5 bg-green-500 rounded-full"></div>
+            <div draggable="false" class="w-5 h-5 bg-blue-500 rounded-full"></div>
+          </div>
+          <h1 class="lg:text-5xl text-3xl mt-1 mr-1 font-medium">#8</h1>
+        </div>
+        <div class="lg:text-xl text-lg flex flex-col mt-5 lg:mt-10 justify-start">
+          <h1 class="font-bold mb-2">Universitas Sebelas Maret</h1>
+          <h2>Surakarta, Jawa Tengah</h2>
+        </div>
+      </div>
+      <div id="card" class= "hover:grayscale duration-500 ease-in-out lg:w-80 w-60 flex flex-col px-5 pb-7 lg:pb-16 mb-3 border-[1px] border-black">
+        <div class="flex justify-between">
+          <div class="flex gap-2 py-2">
+            <div draggable="false" class="w-5 h-5 bg-red-500 rounded-full"></div>
+            <div draggable="false" class="w-5 h-5 bg-green-500 rounded-full"></div>
+            <div draggable="false" class="w-5 h-5 bg-blue-500 rounded-full"></div>
+          </div>
+          <h1 class="lg:text-5xl text-3xl mt-1 mr-1 font-medium">#9</h1>
+        </div>
+        <div class="lg:text-xl text-lg flex flex-col mt-5 lg:mt-10 justify-start">
+          <h1 class="font-bold mb-2">Universitas Diponegoro</h1>
+          <h2>Semarang, Jawa Tengah</h2>
+        </div>
+      </div>
+      <div id="card" class="bg-[#FFF3C8] hover:grayscale duration-500 ease-in-out  lg:w-80 w-60 flex flex-col px-5 pb-7 lg:pb-16 mb-3 border-[1px] border-black">
+        <div class="flex justify-between">
+          <div class="flex gap-2 py-2">
+            <div draggable="false" class="w-5 h-5 bg-red-500 rounded-full"></div>
+            <div draggable="false" class="w-5 h-5 bg-green-500 rounded-full"></div>
+            <div draggable="false" class="w-5 h-5 bg-blue-500 rounded-full"></div>
+          </div>
+          <h1 class="lg:text-5xl text-3xl mt-1 mr-1 font-medium">#10</h1>
+        </div>
+        <div class="lg:text-xl text-lg flex flex-col mt-5 lg:mt-10 justify-start">
+          <h1 class="font-bold mb-2">Institut Pertanian Bogor</h1>
+          <h2>Bogor, Jawa Barat</h2>
+        </div>
+      </div>
+    </div>
+    <!-- card section done -->
+    
+
+    <!-- footer -->
+    <footer class="w-full bg-[#F1B4BB] mt-28 px-6 md:px-24 pb-4 pt-6 md:pt-24">
+      <div class="flex items-center gap-4 md:gap-7 mb-7">
+        <div class="h-7 md:h-20 w-7 md:w-20  rounded-full">
+          <img src="Asset/campus_junction.png" alt="">
+        </div>
+        <h1 class="text-xl md:text-2xl lg:text-4xl">CampusJunction</h1>
+      </div>
+      <p class="text-base md:text-lg mb-14">Akses Informasi Perguruan Tinggi</p>
+      <div class="flex md:flex-row flex-col gap-4 lg:text-xl flex-wrap justify-start lg:justify-between">
+        <div class="flex flex-col">
+          <h3 class="font-bold mb-4 ">CampusJunction</h3>
+          <a href="#"><p class="text-lg mb-1 hover:text-slate-100 duration-300 ease-in-out">Top 10 Univ</p></a>
+          <a href="prodi.html"><p class="text-lg mb-1 hover:text-slate-100 duration-300 ease-in-out">Program Studi</p></a>
+          <a href="jalurMasuk.html"><p class="text-lg mb-1 hover:text-slate-100 duration-300 ease-in-out">Jalur Masuk</p></a>
+          <a href="biaya.html"><p class="text-lg mb-1 hover:text-slate-100 duration-300 ease-in-out">Biaya Pendidikan</p></a>
+          <a href="akomodasi.html"><p class="text-lg mb-1 hover:text-slate-100 duration-300 ease-in-out">Akomodasi</p></a>
+        </div>
+        <div class="flex flex-col">
+          <h3 class="font-bold mb-4">Hubungi Kami</h3>
+          <p class="text-lg mb-1">Layanan Masukan</p>
+          <p class="text-lg mb-1">0821-2295-0235 (Whatsapp)</p>
+          <p class="text-lg mb-1">hello@campusjunction.com</p>
+        </div>
+        <div class="flex flex-col">
+          <h3 class="font-bold mb-4">Social Media</h3>
+          <p class="text-lg mb-1">Instagram</p>
+          <p class="text-lg mb-1">Facebook</p>
+          <p class="text-lg mb-1">Youtube</p>
+          <p class="text-lg mb-1">Twitter</p>
+          <p class="text-lg mb-1">Tiktok</p>
+        </div>
+        <div class="flex flex-col">
+          <h3 class="font-bold mb-4">Lainnya</h3>
+          <p class="text-lg mb-1">FAQ</p>
+          <p class="text-lg mb-1">Terms & Conditions</p>
+          <p class="text-lg mb-1">Privacy & Policy</p>
+        </div>
+      </div>
+      <p class="text-center">© 2023 CampusJunction - by Keilapumari team</p>
+    </footer>
+  </body>
+</html>

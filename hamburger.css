@@ -1,0 +1,23 @@
+
+
+  .icon-bar {
+    width: 30px;
+    height: 3px;
+    background-color: #000;
+    margin: 6px 0;
+    transition: 0.4s;
+  }
+
+  #hamburger.active .icon-bar:nth-child(1) {
+      transform: translateY(11px) rotate(-45deg) ;
+      
+  }
+
+  #hamburger.active .icon-bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  #hamburger.active .icon-bar:nth-child(3) {
+    transform: translateY(-7px) rotate(45deg) ;
+  }
+

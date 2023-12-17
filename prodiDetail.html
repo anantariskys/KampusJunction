@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/dist/output.css" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="hamburger.js"></script>
+    <link rel="stylesheet" href="hamburger.css">
+  </head>
+  <style>
+    .hero {
+      background-image: url("Asset/Profil/TITIK.svg");
+    }
+    .box-sh {
+      box-shadow: 20px 20px 50px 3px rgba(0, 0, 0, 0.84);
+      -webkit-box-shadow: 20px 20px 50px 3px rgba(0, 0, 0, 0.84);
+      -moz-box-shadow: 20px 20px 50px 3px rgba(0, 0, 0, 0.84);
+    }
+    #journey {
+        box-shadow: 5px 5px 0px 0px rgba(0, 0, 0, 0.75);
+        -webkit-box-shadow: 5px 5px 0px 0px rgba(0, 0, 0, 0.75);
+        -moz-box-shadow: 5px 5px 0px 0px rgba(0, 0, 0, 0.75);
+      }
+  
+  </style>
+  <body class="bg-[#FDF0F0]">
+    <div class="w-full">
+     <!-- navbar -->
+    <nav class="w-full h-20 flex items-center justify-evenly md:justify-between px-2 md:px-5 lg:pr-0 lg:pl-3 border-t-2 border-b-2 border-black">
+        <div class="flex flex-row justify-center items-center gap-4 px-2">
+            <div class="w-5 lg:w-16 h-5 lg:h-16 rounded-full  flex justify-center items-center">
+                <img src="Asset/campus_junction.png" alt="">
+              </div>
+          <h1 class="text-lg md:text-xl lg:text-4xl font-medium">CampusJunction</h1>
+        </div>
+        <div class="flex justify-center h-full items-center gap-4 flex-wrap">
+            <a href="/index.html" class="h-full">
+            <div class="h-full flex items-center lg:hidden px-2 border-x-2 hover:bg-[#e97777] hover:text-white duration-300 ease-in-out border-black">
+                <img src="/Asset/home.png" class="cursor-pointer h-2/4" alt="" />
+            </div></a>
+          <div id="hamburger" class="lg:hidden cursor-pointer border-black">
+            <div class="icon-bar"></div>
+            <div class="icon-bar"></div>
+            <div class="icon-bar"></div>
+          </div>
+  
+          <ul class="lg:flex h-full justify-center items-center hidden text-sm lg:text-2xl">
+            <a href="/index.html" class="h-full"><li class="h-full hover:bg-[#e97777] hover:text-white duration-300 ease-in-out border-l-2 border-black p-3 items-center flex ">Beranda</li></a>
+            <a href="#" class="h-full"><li class="h-full hover:bg-[#e97777] hover:text-white duration-300 ease-in-out border-x-2 border-black p-3 items-center flex">Top 10 Univ</li></a>
+            <a href="/prodi.html" class="h-full"><li class="h-full hover:bg-[#e97777] hover:text-white duration-300 ease-in-out border-black p-3 items-center flex">Program Studi</li></a>
+            <a href="jalurMasuk.html" class="h-full"><li class="h-full hover:bg-[#e97777] hover:text-white duration-300 ease-in-out border-x-2 border-black p-3 items-center flex">Jalur Masuk</li></a>
+            <a href="/biaya.html" class="h-full"><li class="h-full hover:bg-[#e97777] hover:text-white duration-300 ease-in-out border-r-2 border-black p-3 items-center flex">Biaya Pendidikan</li></a>
+            <a href="akomodasi.html" class="h-full"><li class="h-full hover:bg-[#e97777] hover:text-white duration-300 ease-in-out border-black p-3 items-center flex">Akomodasi</li></a>
+          </ul>
+        </div>
+      </nav>
+      <div id="menu" class="lg:hidden hidden ">
+        <h3 class="text-2xl font-bold text-center border-b-2 border-black h-full w-full">MENU</h3>
+        <ul class="flex flex-col h-full justify-center items-start text-xl lg:text-2xl">
+          <a class="w-full h-full" href="#">
+            <li class="h-full gap-3 border-b-2 border-black items-center flex hover:bg-[#e97777] hover:text-white duration-300 ease-in-out">
+              <div class="border-r-2 h-full w-12 flex justify-center py-2  border-black">
+                <img src="/Asset/menuUniv.png" alt="" />
+              </div>
+              <p>Top 10 Univ</p>
+            </li>
+          </a>
+          <a class="w-full" href="/prodi.html">
+            <li class="h-full gap-3 border-b-2 border-black items-center flex hover:bg-[#e97777] hover:text-white duration-300 ease-in-out">
+              <div class="border-r-2 h-full w-12 flex justify-center py-2 border-black">
+                <img src="/Asset/toga.png" alt="" />
+              </div>
+              <p>Program Studi</p>
+            </li></a
+          >
+          <a class="w-full" href="jalurMasuk.html">
+            <li class="h-full gap-3 border-b-2 border-black items-center flex hover:bg-[#e97777] hover:text-white duration-300 ease-in-out">
+              <div class="border-r-2 h-full w-12 flex justify-center py-2 border-black">
+                <img src="/Asset/jalurMasuk.png" alt="" />
+              </div>
+              <p>Jalur Masuk</p>
+            </li></a
+          >
+          <a class="w-full" href="biaya.html">
+            <li class="h-full gap-3 border-b-2 border-black items-center flex hover:bg-[#e97777] hover:text-white duration-300 ease-in-out">
+              <div class="border-r-2 h-full w-12 flex justify-center py-2 border-black">
+                <img src="/Asset/biaya.png" alt="" />
+              </div>
+              <p>Biaya Pendidikan</p>
+            </li></a
+          >
+          <a class="w-full" href="akomodasi.html">
+            <li class="h-full gap-3 border-b-2 border-black items-center flex hover:bg-[#e97777] hover:text-white duration-300 ease-in-out">
+              <div class="border-r-2 h-full w-12 flex justify-center py-2 border-black">
+                <img src="/Asset/akomodasi.png" alt="" />
+              </div>
+              <p>Akomodasi</p>
+            </li></a
+          >
+        </ul>
+      </div>
+      <!-- navbar end -->
+
+      <!-- hero -->
+      <div class=" w-full bg-[#E2EBCB]   flex flex-row   lg:gap-12 gap-4  justify-center  items-center border-b-4 border-black">
+        <img draggable="false" src="/Asset/HeroImage/prodiDetail.png" class="h-full w-full  aspect-auto" alt="">
+    </div>
+  </div>
+
+    <!-- content -->
+    <div id="journey" class="bg-white mx-auto text-center w-[90%] mt-10 lg:mt-20 mb-10 lg:mb-20 pb-16 lg:pb-32 border-2 border-black">
+        <div class="flex w-full bg-[#9FDCDA] gap-2 py-3 px-5 mb-7 md:mb-20">
+          <div draggable="false" class="w-5 h-5 bg-red-500 rounded-full"></div>
+          <div draggable="false" class="w-5 h-5 bg-green-500 rounded-full"></div>
+          <div draggable="false" class="w-5 h-5 bg-blue-500 rounded-full"></div>
+        </div>
+        <div class="flex ">
+            <div class="">
+                <h2 class="bg-gradient-to-r mb-7 md:mb-20 from-[#132043] to-[#96CBF9] bg-clip-text text-transparent text-base sm:text-lg md:text-3xl font-bold lg:text-5xl">PROGRAM STUDI SAINTEK</h2>
+                <div class="w-full px-4">
+                    <table class="table-auto border-collapse w-full">
+                        <thead>
+                            <tr class="bg-[#C9DAF8] lg:text-base  md:text-sm text-[9px]">
+                                <th class="border w-3/4 border-slate-400">Program Studi</th>
+                                <th class="border w-1/4 border-slate-400">Passing Grade</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="text-left  group lg:text-base md:text-sm text-[9px]">
+                                <td class="bg-[#FFF2CC] border border-slate-400 px-2 group-hover:bg-[#d4caaa] duration-500 ease-in-out">D4 Desain Grafis</td>
+                                <td class="bg-[#F4CCCC] border border-slate-400 px-2 group-hover:bg-[#c6a5a5] duration-500 ease-in-out">1:1</td>
+                            </tr>
+                            <tr class="text-left  group lg:text-base  md:text-sm text-[9px]">
+                                <td class="bg-[#FFF2CC] border border-slate-400 px-2 group-hover:bg-[#d4caaa] duration-500 ease-in-out">S1 Sosial Ekonomi Perikanan (PSDKU Kediri)</td>
+                                <td class="bg-[#F4CCCC] border border-slate-400 px-2 group-hover:bg-[#c6a5a5] duration-500 ease-in-out">1:2</td>
+                            </tr>
+                            <tr class="text-left  group lg:text-base  md:text-sm text-[9px]">
+                                <td class="bg-[#FFF2CC] border border-slate-400 px-2 group-hover:bg-[#d4caaa] duration-500 ease-in-out">S1 Akuakultur (PSDKU Kediri)</td>
+                                <td class="bg-[#F4CCCC] border border-slate-400 px-2 group-hover:bg-[#c6a5a5] duration-500 ease-in-out">1:3</td>
+                            </tr>
+                            <tr class="text-left  group lg:text-base  md:text-sm text-[9px]">
+                                <td class="bg-[#FFF2CC] border border-slate-400 px-2 group-hover:bg-[#d4caaa] duration-500 ease-in-out">S1 Peternakan (PSDKU Kediri)</td>
+                                <td class="bg-[#F4CCCC] border border-slate-400 px-2 group-hover:bg-[#c6a5a5] duration-500 ease-in-out">1:4</td>
+                            </tr>
+                            <tr class="text-left  group lg:text-base  md:text-sm text-[9px]">
+                                <td class="bg-[#FFF2CC] border border-slate-400 px-2 group-hover:bg-[#d4caaa] duration-500 ease-in-out">S1 Pemanfaatan Sumberdaya Perikanan</td>
+                                <td class="bg-[#F4CCCC] border border-slate-400 px-2 group-hover:bg-[#c6a5a5] duration-500 ease-in-out">1:5</td>
+                            </tr>
+                            <tr class="text-left  group lg:text-base  md:text-sm text-[9px]">
+                                <td class="bg-[#FFF2CC] border border-slate-400 px-2 group-hover:bg-[#d4caaa] duration-500 ease-in-out">S1 Teknologi Hasil Perikanan</td>
+                                <td class="bg-[#F4CCCC] border border-slate-400 px-2 group-hover:bg-[#c6a5a5] duration-500 ease-in-out">1:6</td>
+                            </tr>
+                            <tr class="text-left  group lg:text-base  md:text-sm text-[9px]">
+                                <td class="bg-[#FFF2CC] border border-slate-400 px-2 group-hover:bg-[#d4caaa] duration-500 ease-in-out">S1 Peternakan</td>
+                                <td class="bg-[#F4CCCC] border border-slate-400 px-2 group-hover:bg-[#c6a5a5] duration-500 ease-in-out">1:5</td>
+                            </tr>
+                            <tr class="text-left  group lg:text-base  md:text-sm text-[9px]">
+                                <td class="bg-[#FFF2CC] border border-slate-400 px-2 group-hover:bg-[#d4caaa] duration-500 ease-in-out">S1 Pendidikan Teknologi Informasi</td>
+                                <td class="bg-[#F4CCCC] border border-slate-400 px-2 group-hover:bg-[#c6a5a5] duration-500 ease-in-out">1:6</td>
+                            </tr>
+                            <tr class="text-left  group lg:text-base  md:text-sm text-[9px]">
+                                <td class="bg-[#FFF2CC] border border-slate-400 px-2 group-hover:bg-[#d4caaa] duration-500 ease-in-out">S1 Agrobisnis Perikanan</td>
+                                <td class="bg-[#F4CCCC] border border-slate-400 px-2 group-hover:bg-[#c6a5a5] duration-500 ease-in-out">1:5</td>
+                            </tr>
+                            <tr class="text-left  group lg:text-base  md:text-sm text-[9px]">
+                                <td class="bg-[#FFF2CC] border border-slate-400 px-2 group-hover:bg-[#d4caaa] duration-500 ease-in-out">S1 Instrumentasi</td>
+                                <td class="bg-[#F4CCCC] border border-slate-400 px-2 group-hover:bg-[#c6a5a5] duration-500 ease-in-out">1:10</td>
+                            </tr>
+                            <tr class="text-left  group lg:text-base  md:text-sm text-[9px]">
+                                <td class="bg-[#FFF2CC] border border-slate-400 px-2 group-hover:bg-[#d4caaa] duration-500 ease-in-out">S1 Agroekoteknologi (PSDKU Kediri)</td>
+                                <td class="bg-[#F4CCCC] border border-slate-400 px-2 group-hover:bg-[#c6a5a5] duration-500 ease-in-out">1:12</td>
+                            </tr>
+                            <tr class="text-left  group lg:text-base  md:text-sm text-[9px]">
+                                <td class="bg-[#FFF2CC] border border-slate-400 px-2 group-hover:bg-[#d4caaa] duration-500 ease-in-out">S1 Ilmu Kelautan</td>
+                                <td class="bg-[#F4CCCC] border border-slate-400 px-2 group-hover:bg-[#c6a5a5] duration-500 ease-in-out">1:15</td>
+                            </tr>
+                            <tr class="text-left  group lg:text-base  md:text-sm text-[9px]">
+                                <td class="bg-[#FFF2CC] border border-slate-400 px-2 group-hover:bg-[#d4caaa] duration-500 ease-in-out">S1 Agroekoteknologi</td>
+                                <td class="bg-[#F4CCCC] border border-slate-400 px-2 group-hover:bg-[#c6a5a5] duration-500 ease-in-out">1:9</td>
+                            </tr>
+                            <tr class="text-left  group lg:text-base  md:text-sm text-[9px]">
+                                <td class="bg-[#FFF2CC] border border-slate-400 px-2 group-hover:bg-[#d4caaa] duration-500 ease-in-out">S1 Budidaya Perairan</td>
+                                <td class="bg-[#F4CCCC] border border-slate-400 px-2 group-hover:bg-[#c6a5a5] duration-500 ease-in-out">1:10</td>
+                            </tr>
+                            <tr class="text-left  group lg:text-base  md:text-sm text-[9px]">
+                                <td class="bg-[#FFF2CC] border border-slate-400 px-2 group-hover:bg-[#d4caaa] duration-500 ease-in-out">S1 Manajemen Sumberdaya Perairan</td>
+                                <td class="bg-[#F4CCCC] border border-slate-400 px-2 group-hover:bg-[#c6a5a5] duration-500 ease-in-out">1:11</td>
+                            </tr>
+                            <tr class="text-left  group lg:text-base  md:text-sm text-[9px]">
+                                <td class="bg-[#FFF2CC] border border-slate-400 px-2 group-hover:bg-[#d4caaa] duration-500 ease-in-out">S1 Teknologi Bioproses</td>
+                                <td class="bg-[#F4CCCC] border border-slate-400 px-2 group-hover:bg-[#c6a5a5] duration-500 ease-in-out">1:12</td>
+                            </tr>
+                            <tr class="text-left  group lg:text-base  md:text-sm text-[9px]">
+                                <td class="bg-[#FFF2CC] border border-slate-400 px-2 group-hover:bg-[#d4caaa] duration-500 ease-in-out">S1 Teknik Pertanian dan Biosistem</td>
+                                <td class="bg-[#F4CCCC] border border-slate-400 px-2 group-hover:bg-[#c6a5a5] duration-500 ease-in-out">1:12</td>
+                            </tr>
+                            <tr class="text-left  group lg:text-base  md:text-sm text-[9px]">
+                                <td class="bg-[#FFF2CC] border border-slate-400 px-2 group-hover:bg-[#d4caaa] duration-500 ease-in-out">S1 Fisika</td>
+                                <td class="bg-[#F4CCCC] border border-slate-400 px-2 group-hover:bg-[#c6a5a5] duration-500 ease-in-out">1:5</td>
+                            </tr>
+                            <tr class="text-left  group lg:text-base  md:text-sm text-[9px]">
+                                <td class="bg-[#FFF2CC] border border-slate-400 px-2 group-hover:bg-[#d4caaa] duration-500 ease-in-out">S1 Teknik Pengairan</td>
+                                <td class="bg-[#F4CCCC] border border-slate-400 px-2 group-hover:bg-[#c6a5a5] duration-500 ease-in-out">1:16</td>
+                            </tr>
+                            <tr class="text-left  group lg:text-base  md:text-sm text-[9px]">
+                                <td class="bg-[#FFF2CC] border border-slate-400 px-2 group-hover:bg-[#d4caaa] duration-500 ease-in-out">S1 Kimia</td>
+                                <td class="bg-[#F4CCCC] border border-slate-400 px-2 group-hover:bg-[#c6a5a5] duration-500 ease-in-out">1:3</td>
+                            </tr>
+                            <tr class="text-left  group lg:text-base  md:text-sm text-[9px]">
+                                <td class="bg-[#FFF2CC] border border-slate-400 px-2 group-hover:bg-[#d4caaa] duration-500 ease-in-out">S1 Teknik Industri Pertanian</td>
+                                <td class="bg-[#F4CCCC] border border-slate-400 px-2 group-hover:bg-[#c6a5a5] duration-500 ease-in-out">1:5</td>
+                            </tr>
+                            <tr class="text-left  group lg:text-base  md:text-sm text-[9px]">
+                                <td class="bg-[#FFF2CC] border border-slate-400 px-2 group-hover:bg-[#d4caaa] duration-500 ease-in-out">Agribisnis (PSDKU Kediri)</td>
+                                <td class="bg-[#F4CCCC] border border-slate-400 px-2 group-hover:bg-[#c6a5a5] duration-500 ease-in-out">1:10</td>
+                            </tr>
+                            <tr class="text-left  group lg:text-base  md:text-sm text-[9px]">
+                                <td class="bg-[#FFF2CC] border border-slate-400 px-2 group-hover:bg-[#d4caaa] duration-500 ease-in-out">Pendidikan Dokter Hewan</td>
+                                <td class="bg-[#F4CCCC] border border-slate-400 px-2 group-hover:bg-[#c6a5a5] duration-500 ease-in-out">1:4</td>
+                            </tr>
+                            <tr class="text-left  group lg:text-base  md:text-sm text-[9px]">
+                                <td class="bg-[#FFF2CC] border border-slate-400 px-2 group-hover:bg-[#d4caaa] duration-500 ease-in-out">Teknik Geofisika</td>
+                                <td class="bg-[#F4CCCC] border border-slate-400 px-2 group-hover:bg-[#c6a5a5] duration-500 ease-in-out">1:10</td>
+                            </tr>
+                            <tr class="text-left  group lg:text-base  md:text-sm text-[9px]">
+                                <td class="bg-[#FFF2CC] border border-slate-400 px-2 group-hover:bg-[#d4caaa] duration-500 ease-in-out">S1 Teknik Komputer</td>
+                                <td class="bg-[#F4CCCC] border border-slate-400 px-2 group-hover:bg-[#c6a5a5] duration-500 ease-in-out">1:10</td>
+                            </tr>
+                            <tr class="text-left  group lg:text-base  md:text-sm text-[9px]">
+                                <td class="bg-[#FFF2CC] border border-slate-400 px-2 group-hover:bg-[#d4caaa] duration-500 ease-in-out">S1 Biologi</td>
+                                <td class="bg-[#F4CCCC] border border-slate-400 px-2 group-hover:bg-[#c6a5a5] duration-500 ease-in-out">1:10</td>
+                            </tr>
+                            <tr class="text-left  group lg:text-base  md:text-sm text-[9px]">
+                                <td class="bg-[#FFF2CC] border border-slate-400 px-2 group-hover:bg-[#d4caaa] duration-500 ease-in-out">S1 Pendidikan Dokter Hewan</td>
+                                <td class="bg-[#F4CCCC] border border-slate-400 px-2 group-hover:bg-[#c6a5a5] duration-500 ease-in-out">1:8</td>
+                            </tr>
+                            <tr class="text-left  group lg:text-base  md:text-sm text-[9px]">
+                                <td class="bg-[#FFF2CC] border border-slate-400 px-2 group-hover:bg-[#d4caaa] duration-500 ease-in-out">S1 Teknik Kimia</td>
+                                <td class="bg-[#F4CCCC] border border-slate-400 px-2 group-hover:bg-[#c6a5a5] duration-500 ease-in-out">1:13</td>
+                            </tr>
+                            <tr class="text-left  group lg:text-base  md:text-sm text-[9px]">
+                                <td class="bg-[#FFF2CC] border border-slate-400 px-2 group-hover:bg-[#d4caaa] duration-500 ease-in-out">S1 Matematika</td>
+                                <td class="bg-[#F4CCCC] border border-slate-400 px-2 group-hover:bg-[#c6a5a5] duration-500 ease-in-out">1:14</td>
+                            </tr>
+                            <tr class="text-left  group lg:text-base  md:text-sm text-[9px]">
+                                <td class="bg-[#FFF2CC] border border-slate-400 px-2 group-hover:bg-[#d4caaa] duration-500 ease-in-out">S1 Bioteknologi</td>
+                                <td class="bg-[#F4CCCC] border border-slate-400 px-2 group-hover:bg-[#c6a5a5] duration-500 ease-in-out">1:12</td>
+                            </tr>
+                            <tr class="text-left  group lg:text-base  md:text-sm text-[9px]">
+                                <td class="bg-[#FFF2CC] border border-slate-400 px-2 group-hover:bg-[#d4caaa] duration-500 ease-in-out">S1 Ilmu Aktuaria</td>
+                                <td class="bg-[#F4CCCC] border border-slate-400 px-2 group-hover:bg-[#c6a5a5] duration-500 ease-in-out">1:23</td>
+                            </tr>
+                            <tr class="text-left  group lg:text-base  md:text-sm text-[9px]">
+                                <td class="bg-[#FFF2CC] border border-slate-400 px-2 group-hover:bg-[#d4caaa] duration-500 ease-in-out">S1 Teknologi Informasi</td>
+                                <td class="bg-[#F4CCCC] border border-slate-400 px-2 group-hover:bg-[#c6a5a5] duration-500 ease-in-out">1:13</td>
+                            </tr>
+                            <tr class="text-left  group lg:text-base  md:text-sm text-[9px]">
+                                <td class="bg-[#FFF2CC] border border-slate-400 px-2 group-hover:bg-[#d4caaa] duration-500 ease-in-out">S1 Teknik Elektro</td>
+                                <td class="bg-[#F4CCCC] border border-slate-400 px-2 group-hover:bg-[#c6a5a5] duration-500 ease-in-out">1:10</td>
+                            </tr>
+                            <tr class="text-left  group lg:text-base  md:text-sm text-[9px]">
+                                <td class="bg-[#FFF2CC] border border-slate-400 px-2 group-hover:bg-[#d4caaa] duration-500 ease-in-out">S1 Teknik Lingkungan</td>
+                                <td class="bg-[#F4CCCC] border border-slate-400 px-2 group-hover:bg-[#c6a5a5] duration-500 ease-in-out">1:14</td>
+                            </tr>
+                            <tr class="text-left  group lg:text-base  md:text-sm text-[9px]">
+                                <td class="bg-[#FFF2CC] border border-slate-400 px-2 group-hover:bg-[#d4caaa] duration-500 ease-in-out">S1 Teknik Industri Pertanian</td>
+                                <td class="bg-[#F4CCCC] border border-slate-400 px-2 group-hover:bg-[#c6a5a5] duration-500 ease-in-out">1:7</td>
+                            </tr>
+                            <tr class="text-left  group lg:text-base  md:text-sm text-[9px]">
+                                <td class="bg-[#FFF2CC] border border-slate-400 px-2 group-hover:bg-[#d4caaa] duration-500 ease-in-out">S1 Teknik Mesin</td>
+                                <td class="bg-[#F4CCCC] border border-slate-400 px-2 group-hover:bg-[#c6a5a5] duration-500 ease-in-out">1:12</td>
+                            </tr>
+                            <tr class="text-left  group lg:text-base  md:text-sm text-[9px]">
+                                <td class="bg-[#FFF2CC] border border-slate-400 px-2 group-hover:bg-[#d4caaa] duration-500 ease-in-out">S1 Peternakan</td>
+                                <td class="bg-[#F4CCCC] border border-slate-400 px-2 group-hover:bg-[#c6a5a5] duration-500 ease-in-out">1:4</td>
+                            </tr>
+                            <tr class="text-left  group lg:text-base  md:text-sm text-[9px]">
+                                <td class="bg-[#FFF2CC] border border-slate-400 px-2 group-hover:bg-[#d4caaa] duration-500 ease-in-out">S1 Kebidanan</td>
+                                <td class="bg-[#F4CCCC] border border-slate-400 px-2 group-hover:bg-[#c6a5a5] duration-500 ease-in-out">1:25</td>
+                            </tr>
+                            <tr class="text-left  group lg:text-base  md:text-sm text-[9px]">
+                                <td class="bg-[#FFF2CC] border border-slate-400 px-2 group-hover:bg-[#d4caaa] duration-500 ease-in-out">S1 Perencanaan Wilayah & Kota</td>
+                                <td class="bg-[#F4CCCC] border border-slate-400 px-2 group-hover:bg-[#c6a5a5] duration-500 ease-in-out">1:16</td>
+                            </tr>
+                            <tr class="text-left  group lg:text-base  md:text-sm text-[9px]">
+                                <td class="bg-[#FFF2CC] border border-slate-400 px-2 group-hover:bg-[#d4caaa] duration-500 ease-in-out">S1 Pendidikan Dokter Gigi</td>
+                                <td class="bg-[#F4CCCC] border border-slate-400 px-2 group-hover:bg-[#c6a5a5] duration-500 ease-in-out">1:19</td>
+                            </tr>
+                            <tr class="text-left  group lg:text-base  md:text-sm text-[9px]">
+                                <td class="bg-[#FFF2CC] border border-slate-400 px-2 group-hover:bg-[#d4caaa] duration-500 ease-in-out">S1 Teknologi Pangan</td>
+                                <td class="bg-[#F4CCCC] border border-slate-400 px-2 group-hover:bg-[#c6a5a5] duration-500 ease-in-out">1:16</td>
+                            </tr>
+                            <tr class="text-left  group lg:text-base  md:text-sm text-[9px]">
+                                <td class="bg-[#FFF2CC] border border-slate-400 px-2 group-hover:bg-[#d4caaa] duration-500 ease-in-out">S1 Teknik Sipil</td>
+                                <td class="bg-[#F4CCCC] border border-slate-400 px-2 group-hover:bg-[#c6a5a5] duration-500 ease-in-out">1:19</td>
+                            </tr>
+                            <tr class="text-left  group lg:text-base  md:text-sm text-[9px]">
+                                <td class="bg-[#FFF2CC] border border-slate-400 px-2 group-hover:bg-[#d4caaa] duration-500 ease-in-out">S1 Arsitektur</td>
+                                <td class="bg-[#F4CCCC] border border-slate-400 px-2 group-hover:bg-[#c6a5a5] duration-500 ease-in-out">1:19</td>
+                            </tr>
+                            <tr class="text-left  group lg:text-base  md:text-sm text-[9px]">
+                                <td class="bg-[#FFF2CC] border border-slate-400 px-2 group-hover:bg-[#d4caaa] duration-500 ease-in-out">S1 Statistika</td>
+                                <td class="bg-[#F4CCCC] border border-slate-400 px-2 group-hover:bg-[#c6a5a5] duration-500 ease-in-out">1:19</td>
+                            </tr>
+                            <tr class="text-left  group lg:text-base  md:text-sm text-[9px]">
+                                <td class="bg-[#FFF2CC] border border-slate-400 px-2 group-hover:bg-[#d4caaa] duration-500 ease-in-out">S1 Teknik Industri</td>
+                                <td class="bg-[#F4CCCC] border border-slate-400 px-2 group-hover:bg-[#c6a5a5] duration-500 ease-in-out">1:18</td>
+                            </tr>
+                            <tr class="text-left  group lg:text-base  md:text-sm text-[9px]">
+                                <td class="bg-[#FFF2CC] border border-slate-400 px-2 group-hover:bg-[#d4caaa] duration-500 ease-in-out">S1 Agroekoteknologi</td>
+                                <td class="bg-[#F4CCCC] border border-slate-400 px-2 group-hover:bg-[#c6a5a5] duration-500 ease-in-out">1:5</td>
+                            </tr>
+                            <tr class="text-left  group lg:text-base  md:text-sm text-[9px]">
+                                <td class="bg-[#FFF2CC] border border-slate-400 px-2 group-hover:bg-[#d4caaa] duration-500 ease-in-out">S1 Sistem Informasi</td>
+                                <td class="bg-[#F4CCCC] border border-slate-400 px-2 group-hover:bg-[#c6a5a5] duration-500 ease-in-out">1:21</td>
+                            </tr>
+                            <tr class="text-left  group lg:text-base  md:text-sm text-[9px]">
+                                <td class="bg-[#FFF2CC] border border-slate-400 px-2 group-hover:bg-[#d4caaa] duration-500 ease-in-out">S1 Ilmu Gizi</td>
+                                <td class="bg-[#F4CCCC] border border-slate-400 px-2 group-hover:bg-[#c6a5a5] duration-500 ease-in-out">1:28</td>
+                            </tr>
+                            <tr class="text-left  group lg:text-base  md:text-sm text-[9px]">
+                                <td class="bg-[#FFF2CC] border border-slate-400 px-2 group-hover:bg-[#d4caaa] duration-500 ease-in-out">S1 Farmasi</td>
+                                <td class="bg-[#F4CCCC] border border-slate-400 px-2 group-hover:bg-[#c6a5a5] duration-500 ease-in-out">1:41</td>
+                            </tr>
+                            <tr class="text-left  group lg:text-base  md:text-sm text-[9px]">
+                                <td class="bg-[#FFF2CC] border border-slate-400 px-2 group-hover:bg-[#d4caaa] duration-500 ease-in-out">S1 Agribisnis</td>
+                                <td class="bg-[#F4CCCC] border border-slate-400 px-2 group-hover:bg-[#c6a5a5] duration-500 ease-in-out">1:11</td>
+                            </tr>
+                            <tr class="text-left  group lg:text-base  md:text-sm text-[9px]">
+                                <td class="bg-[#FFF2CC] border border-slate-400 px-2 group-hover:bg-[#d4caaa] duration-500 ease-in-out">S1 Ilmu Keperawatan</td>
+                                <td class="bg-[#F4CCCC] border border-slate-400 px-2 group-hover:bg-[#c6a5a5] duration-500 ease-in-out">1:30</td>
+                            </tr>
+                            <tr class="text-left  group lg:text-base  md:text-sm text-[9px]">
+                                <td class="bg-[#FFF2CC] border border-slate-400 px-2 group-hover:bg-[#d4caaa] duration-500 ease-in-out">S1 Teknik Informatika</td>
+                                <td class="bg-[#F4CCCC] border border-slate-400 px-2 group-hover:bg-[#c6a5a5] duration-500 ease-in-out">1:27</td>
+                            </tr>
+                            <tr class="text-left  group lg:text-base  md:text-sm text-[9px]">
+                                <td class="bg-[#FFF2CC] border border-slate-400 px-2 group-hover:bg-[#d4caaa] duration-500 ease-in-out">S1 Kedokteran</td>
+                                <td class="bg-[#F4CCCC] border border-slate-400 px-2 group-hover:bg-[#c6a5a5] duration-500 ease-in-out">1:32</td>
+                            </tr>
+                            
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div>
+                <h2 class="bg-gradient-to-r mb-7 md:mb-20  from-[#132043] to-[#96CBF9] bg-clip-text text-transparent text-base sm:text-lg md:text-3xl font-bold lg:text-5xl">PROGRAM STUDI SOSHUM</h2>
+                <div class="w-full px-4">
+                    <table class="table-auto border-collapse w-full">
+                        <thead>
+                            <tr class="bg-[#C9DAF8] lg:text-base  md:text-sm text-[9px]">
+                                <th class="border w-3/4 border-slate-400">Program Studi</th>
+                                <th class="border w-1/4 border-slate-400">Passing Grade</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="text-left  group lg:text-base  md:text-sm text-[9px] ">
+                                <td class="bg-[#FFF2CC] border border-slate-400 px-2 group-hover:bg-[#d4caaa] duration-500 ease-in-out">S1 Seni Rupa Murni</td>
+                                <td class="bg-[#F4CCCC] border border-slate-400 px-2 group-hover:bg-[#c6a5a5] duration-500 ease-in-out">1:2</td>
+                            </tr>
+                            <tr class="text-left  group lg:text-base  md:text-sm text-[9px] ">
+                                <td class="bg-[#FFF2CC] border border-slate-400 px-2 group-hover:bg-[#d4caaa] duration-500 ease-in-out">S1 Bahasa dan Sastra Prancis</td>
+                                <td class="bg-[#F4CCCC] border border-slate-400 px-2 group-hover:bg-[#c6a5a5] duration-500 ease-in-out">1:3</td>
+                            </tr>
+                            <tr class="text-left  group lg:text-base  md:text-sm text-[9px] ">
+                                <td class="bg-[#FFF2CC] border border-slate-400 px-2 group-hover:bg-[#d4caaa] duration-500 ease-in-out">S1 Sastra Cina</td>
+                                <td class="bg-[#F4CCCC] border border-slate-400 px-2 group-hover:bg-[#c6a5a5] duration-500 ease-in-out">1:6</td>
+                            </tr>
+                            <tr class="text-left  group lg:text-base  md:text-sm text-[9px] ">
+                                <td class="bg-[#FFF2CC] border border-slate-400 px-2 group-hover:bg-[#d4caaa] duration-500 ease-in-out">S1 Pendidikan Bahasa Jepang</td>
+                                <td class="bg-[#F4CCCC] border border-slate-400 px-2 group-hover:bg-[#c6a5a5] duration-500 ease-in-out">1:6</td>
+                            </tr>
+                            <tr class="text-left  group lg:text-base  md:text-sm text-[9px] ">
+                                <td class="bg-[#FFF2CC] border border-slate-400 px-2 group-hover:bg-[#d4caaa] duration-500 ease-in-out">S1 Pendidikan Bahasa Inggris</td>
+                                <td class="bg-[#F4CCCC] border border-slate-400 px-2 group-hover:bg-[#c6a5a5] duration-500 ease-in-out">1:8</td>
+                            </tr>
+                            <tr class="text-left  group lg:text-base  md:text-sm text-[9px] ">
+                                <td class="bg-[#FFF2CC] border border-slate-400 px-2 group-hover:bg-[#d4caaa] duration-500 ease-in-out">S1 Administrasi Pendidikan</td>
+                                <td class="bg-[#F4CCCC] border border-slate-400 px-2 group-hover:bg-[#c6a5a5] duration-500 ease-in-out">1:8</td>
+                            </tr>
+                            <tr class="text-left  group lg:text-base  md:text-sm text-[9px] ">
+                                <td class="bg-[#FFF2CC] border border-slate-400 px-2 group-hover:bg-[#d4caaa] duration-500 ease-in-out">S1 Ilmu Politik</td>
+                                <td class="bg-[#F4CCCC] border border-slate-400 px-2 group-hover:bg-[#c6a5a5] duration-500 ease-in-out">1:9</td>
+                            </tr>
+                            <tr class="text-left  group lg:text-base  md:text-sm text-[9px] ">
+                                <td class="bg-[#FFF2CC] border border-slate-400 px-2 group-hover:bg-[#d4caaa] duration-500 ease-in-out">S1 Ekonomi Islam</td>
+                                <td class="bg-[#F4CCCC] border border-slate-400 px-2 group-hover:bg-[#c6a5a5] duration-500 ease-in-out">1:10</td>
+                            </tr>
+                            <tr class="text-left  group lg:text-base  md:text-sm text-[9px] ">
+                                <td class="bg-[#FFF2CC] border border-slate-400 px-2 group-hover:bg-[#d4caaa] duration-500 ease-in-out">S1 Sastra Jepang</td>
+                                <td class="bg-[#F4CCCC] border border-slate-400 px-2 group-hover:bg-[#c6a5a5] duration-500 ease-in-out">1:10</td>
+                            </tr>
+                            <tr class="text-left  group lg:text-base  md:text-sm text-[9px] ">
+                                <td class="bg-[#FFF2CC] border border-slate-400 px-2 group-hover:bg-[#d4caaa] duration-500 ease-in-out">S1 Ekonomi Pembangunan</td>
+                                <td class="bg-[#F4CCCC] border border-slate-400 px-2 group-hover:bg-[#c6a5a5] duration-500 ease-in-out">1:10</td>
+                            </tr>
+                            <tr class="text-left  group lg:text-base  md:text-sm text-[9px] ">
+                                <td class="bg-[#FFF2CC] border border-slate-400 px-2 group-hover:bg-[#d4caaa] duration-500 ease-in-out">S1 Sosiologi</td>
+                                <td class="bg-[#F4CCCC] border border-slate-400 px-2 group-hover:bg-[#c6a5a5] duration-500 ease-in-out">1:10</td>
+                            </tr>
+                            <tr class="text-left  group lg:text-base  md:text-sm text-[9px] ">
+                                <td class="bg-[#FFF2CC] border border-slate-400 px-2 group-hover:bg-[#d4caaa] duration-500 ease-in-out">S1 Pendidikan Bahasa & Sastra Indonesia</td>
+                                <td class="bg-[#F4CCCC] border border-slate-400 px-2 group-hover:bg-[#c6a5a5] duration-500 ease-in-out">1:10</td>
+                            </tr>
+                            <tr class="text-left  group lg:text-base  md:text-sm text-[9px] ">
+                                <td class="bg-[#FFF2CC] border border-slate-400 px-2 group-hover:bg-[#d4caaa] duration-500 ease-in-out">S1 Manajemen Perhotelan</td>
+                                <td class="bg-[#F4CCCC] border border-slate-400 px-2 group-hover:bg-[#c6a5a5] duration-500 ease-in-out">1:11</td>
+                            </tr>
+                            <tr class="text-left  group lg:text-base  md:text-sm text-[9px] ">
+                                <td class="bg-[#FFF2CC] border border-slate-400 px-2 group-hover:bg-[#d4caaa] duration-500 ease-in-out">S1 Ekonomi, Keuangan dan Perbankan</td>
+                                <td class="bg-[#F4CCCC] border border-slate-400 px-2 group-hover:bg-[#c6a5a5] duration-500 ease-in-out">1:12</td>
+                            </tr>
+                            <tr class="text-left  group lg:text-base  md:text-sm text-[9px] ">
+                                <td class="bg-[#FFF2CC] border border-slate-400 px-2 group-hover:bg-[#d4caaa] duration-500 ease-in-out">S1 Administrasi Publik</td>
+                                <td class="bg-[#F4CCCC] border border-slate-400 px-2 group-hover:bg-[#c6a5a5] duration-500 ease-in-out">1:12</td>
+                            </tr>
+                            <tr class="text-left  group lg:text-base  md:text-sm text-[9px] ">
+                                <td class="bg-[#FFF2CC] border border-slate-400 px-2 group-hover:bg-[#d4caaa] duration-500 ease-in-out">S1 Ilmu Pemerintahan</td>
+                                <td class="bg-[#F4CCCC] border border-slate-400 px-2 group-hover:bg-[#c6a5a5] duration-500 ease-in-out">1:12</td>
+                            </tr>
+                            <tr class="text-left  group lg:text-base  md:text-sm text-[9px] ">
+                                <td class="bg-[#FFF2CC] border border-slate-400 px-2 group-hover:bg-[#d4caaa] duration-500 ease-in-out">S1 Ilmu Perpustakaan</td>
+                                <td class="bg-[#F4CCCC] border border-slate-400 px-2 group-hover:bg-[#c6a5a5] duration-500 ease-in-out">1:12</td>
+                            </tr>
+                            <tr class="text-left  group lg:text-base  md:text-sm text-[9px] ">
+                                <td class="bg-[#FFF2CC] border border-slate-400 px-2 group-hover:bg-[#d4caaa] duration-500 ease-in-out">S1 Antropologi</td>
+                                <td class="bg-[#F4CCCC] border border-slate-400 px-2 group-hover:bg-[#c6a5a5] duration-500 ease-in-out">1:21</td>
+                            </tr>
+                            <tr class="text-left  group lg:text-base  md:text-sm text-[9px] ">
+                                <td class="bg-[#FFF2CC] border border-slate-400 px-2 group-hover:bg-[#d4caaa] duration-500 ease-in-out">S1 Akuntansi</td>
+                                <td class="bg-[#F4CCCC] border border-slate-400 px-2 group-hover:bg-[#c6a5a5] duration-500 ease-in-out">1:12</td>
+                            </tr>
+                            <tr class="text-left  group lg:text-base  md:text-sm text-[9px] ">
+                                <td class="bg-[#FFF2CC] border border-slate-400 px-2 group-hover:bg-[#d4caaa] duration-500 ease-in-out">S1 Sastra Inggris</td>
+                                <td class="bg-[#F4CCCC] border border-slate-400 px-2 group-hover:bg-[#c6a5a5] duration-500 ease-in-out">1:13</td>
+                            </tr>
+                            <tr class="text-left  group lg:text-base  md:text-sm text-[9px] ">
+                                <td class="bg-[#FFF2CC] border border-slate-400 px-2 group-hover:bg-[#d4caaa] duration-500 ease-in-out">S1 Ilmu Hukum</td>
+                                <td class="bg-[#F4CCCC] border border-slate-400 px-2 group-hover:bg-[#c6a5a5] duration-500 ease-in-out">1:14</td>
+                            </tr>
+                            <tr class="text-left  group lg:text-base  md:text-sm text-[9px] ">
+                                <td class="bg-[#FFF2CC] border border-slate-400 px-2 group-hover:bg-[#d4caaa] duration-500 ease-in-out">S1 Hubungan International</td>
+                                <td class="bg-[#F4CCCC] border border-slate-400 px-2 group-hover:bg-[#c6a5a5] duration-500 ease-in-out">1:15</td>
+                            </tr>
+                            <tr class="text-left  group lg:text-base  md:text-sm text-[9px] ">
+                                <td class="bg-[#FFF2CC] border border-slate-400 px-2 group-hover:bg-[#d4caaa] duration-500 ease-in-out">S1 Administrasi Bisnis</td>
+                                <td class="bg-[#F4CCCC] border border-slate-400 px-2 group-hover:bg-[#c6a5a5] duration-500 ease-in-out">1:15</td>
+                            </tr>
+                            <tr class="text-left  group lg:text-base  md:text-sm text-[9px] ">
+                                <td class="bg-[#FFF2CC] border border-slate-400 px-2 group-hover:bg-[#d4caaa] duration-500 ease-in-out">S1 Perpajakan</td>
+                                <td class="bg-[#F4CCCC] border border-slate-400 px-2 group-hover:bg-[#c6a5a5] duration-500 ease-in-out">1:16</td>
+                            </tr>
+                            <tr class="text-left  group lg:text-base  md:text-sm text-[9px] ">
+                                <td class="bg-[#FFF2CC] border border-slate-400 px-2 group-hover:bg-[#d4caaa] duration-500 ease-in-out">S1 Ilmu Komunikasi</td>
+                                <td class="bg-[#F4CCCC] border border-slate-400 px-2 group-hover:bg-[#c6a5a5] duration-500 ease-in-out">1:17</td>
+                            </tr>
+                            <tr class="text-left  group lg:text-base  md:text-sm text-[9px] ">
+                                <td class="bg-[#FFF2CC] border border-slate-400 px-2 group-hover:bg-[#d4caaa] duration-500 ease-in-out">S1 Kewirausahaan</td>
+                                <td class="bg-[#F4CCCC] border border-slate-400 px-2 group-hover:bg-[#c6a5a5] duration-500 ease-in-out">1:19</td>
+                            </tr>
+                            <tr class="text-left  group lg:text-base  md:text-sm text-[9px] ">
+                                <td class="bg-[#FFF2CC] border border-slate-400 px-2 group-hover:bg-[#d4caaa] duration-500 ease-in-out">S1 Psikologi</td>
+                                <td class="bg-[#F4CCCC] border border-slate-400 px-2 group-hover:bg-[#c6a5a5] duration-500 ease-in-out">1:20</td>
+                            </tr>
+                            <tr class="text-left  group lg:text-base  md:text-sm text-[9px] ">
+                                <td class="bg-[#FFF2CC] border border-slate-400 px-2 group-hover:bg-[#d4caaa] duration-500 ease-in-out">S1 Manajemen</td>
+                                <td class="bg-[#F4CCCC] border border-slate-400 px-2 group-hover:bg-[#c6a5a5] duration-500 ease-in-out">1:22</td>
+                            </tr>
+                            <tr class="text-left  group lg:text-base  md:text-sm text-[9px] ">
+                                <td class="bg-[#FFF2CC] border border-slate-400 px-2 group-hover:bg-[#d4caaa] duration-500 ease-in-out">S1 Pariwisata</td>
+                                <td class="bg-[#F4CCCC] border border-slate-400 px-2 group-hover:bg-[#c6a5a5] duration-500 ease-in-out">1:2</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+          
+        </div>
+      </div>
+    <!-- content end -->
+
+
+   
+    <!-- footer -->
+    <footer class="w-full bg-[#F1B4BB] mt-28 px-6 md:px-24 pb-4 pt-6 md:pt-24">
+        <div class="flex items-center gap-4 md:gap-7 mb-7">
+            <div class="h-7 md:h-20 w-7 md:w-20  rounded-full">
+                <img src="Asset/campus_junction.png" alt="">
+              </div>
+          <h1 class="text-xl md:text-2xl lg:text-4xl">CampusJunction</h1>
+        </div>
+        <p class="text-base md:text-lg mb-14">Akses Informasi Perguruan Tinggi</p>
+        <div class="flex md:flex-row flex-col gap-4 lg:text-xl flex-wrap justify-start lg:justify-between">
+          <div class="flex flex-col">
+            <h3 class="font-bold mb-4 ">CampusJunction</h3>
+            <a href="#"><p class="text-lg mb-1 hover:text-slate-100 duration-300 ease-in-out">Top 10 Univ</p></a>
+            <a href="prodi.html"><p class="text-lg mb-1 hover:text-slate-100 duration-300 ease-in-out">Program Studi</p></a>
+            <a href="jalurMasuk.html"><p class="text-lg mb-1 hover:text-slate-100 duration-300 ease-in-out">Jalur Masuk</p></a>
+            <a href="biaya.html"><p class="text-lg mb-1 hover:text-slate-100 duration-300 ease-in-out">Biaya Pendidikan</p></a>
+            <a href="akomodasi.html"><p class="text-lg mb-1 hover:text-slate-100 duration-300 ease-in-out">Akomodasi</p></a>
+          </div>
+          <div class="flex flex-col">
+            <h3 class="font-bold mb-4">Hubungi Kami</h3>
+            <p class="text-lg mb-1">Layanan Masukan</p>
+            <p class="text-lg mb-1">0821-2295-0235 (Whatsapp)</p>
+            <p class="text-lg mb-1">hello@campusjunction.com</p>
+          </div>
+          <div class="flex flex-col">
+            <h3 class="font-bold mb-4">Social Media</h3>
+            <p class="text-lg mb-1">Instagram</p>
+            <p class="text-lg mb-1">Facebook</p>
+            <p class="text-lg mb-1">Youtube</p>
+            <p class="text-lg mb-1">Twitter</p>
+            <p class="text-lg mb-1">Tiktok</p>
+          </div>
+          <div class="flex flex-col">
+            <h3 class="font-bold mb-4">Lainnya</h3>
+            <p class="text-lg mb-1">FAQ</p>
+            <p class="text-lg mb-1">Terms & Conditions</p>
+            <p class="text-lg mb-1">Privacy & Policy</p>
+          </div>
+        </div>
+        <p class="text-center">© 2023 CampusJunction - by Keilapumari team</p>
+      </footer>
+  </body>
+</html>
